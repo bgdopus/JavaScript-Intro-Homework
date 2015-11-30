@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+        function timerFunc() {
+            var now = new Date();
+            var hour = now.getHours();
+            var min = now.getMinutes();
+            var sec = now.getSeconds();
+            document.getElementById("clock").value =
+              "" + hour + ":" + min + ":" + sec;
+        }
+        setInterval('timerFunc()', 1000);
+
+    </script>
+    <title></title>
+</head>
+<body>
+    <input type="text" id="clock" />
+</body>
+</html>
